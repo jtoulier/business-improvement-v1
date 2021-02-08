@@ -9,6 +9,7 @@ import java.util.List;
 
 @FeignClient(name = "data-improvement-v1-product-improvement", url = "${data-improvement-v1.url}")
 public interface DataImprovementV1ProductImprovementProxy {
+
     @GetMapping("/product/{tio-aux}/product-improvement")
     List<ProductImprovementResponse> findByTioAux(
             @PathVariable("tio-aux") String tioAux

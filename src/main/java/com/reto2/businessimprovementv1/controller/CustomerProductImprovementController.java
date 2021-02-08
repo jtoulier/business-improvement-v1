@@ -17,7 +17,7 @@ public class CustomerProductImprovementController {
     @Autowired
     private CustomerProductImprovementService customerProductImprovementService;
 
-    @PostMapping("/save")
+    @PostMapping("/customer-product-improvement")
     public ResponseEntity<CustomerProductImprovementResponse> save(
             @RequestBody CustomerProductImprovementRequest customerProductImprovementRequest
     ) {
